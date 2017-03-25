@@ -13,9 +13,9 @@
 ##  Restart docker container
     $ docker restart radius 
 
-## Test Radius
+## Test radius
     $ yum install -y freeradius-utils
     $ radtest testUser testPassword <docker radius ip> 0 testing123
 
-## Check Radius Log
+## Check radius Log
     $ docker exec -it radius tail -f /tmp/radius.log
