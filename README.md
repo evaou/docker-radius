@@ -1,11 +1,10 @@
 # Docker Radius 
 
-1. Build docker image
+Build docker image
 
     $ docker build -t radius .
 
-# Run docker container
-
+Run docker container
     $ mkdir -p /tmp/var/log/radius
     $ docker-compose up -d
 
