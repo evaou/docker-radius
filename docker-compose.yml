@@ -3,7 +3,7 @@ radius:
   restart: always
   image: radius
   volumes:
-    - /tmp/var/log/radius:/var/log/radius
+    - /tmp:/tmp
   tty: true
   ports:
     - "1812/tcp:1812/tcp"

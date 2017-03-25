@@ -1,22 +1,21 @@
-# Build docker image
+## Build docker image
     $ docker build -t radius .
 
-# Run docker container
-    $ mkdir -p /tmp/var/log/radius
+## Run docker container
     $ docker-compose up -d
 
-# Configure radius
+## Configure radius
     $ docker exec -it radius bash
-    $ echo "testing Cleartext-Password := \"password\"" >> /etc/raddb/users 
+    $ echo "testUser Cleartext-Password := \"testPassword\"" >> /etc/raddb/users 
     $ echo -e "client any {\n        ipaddr     = 0.0.0.0/0\n        secret    = testing123\n}" >> /etc/raddb/clients.conf
     $ exit
 
-#  Restart docker container
+##  Restart docker container
     $ docker restart radius 
 
-# Test Radius
+## Test Radius
     $ yum install -y freeradius-utils
-    $ radtest testing password <docker radius ip> 0 testing123
+    $ radtest testUser testPassword <docker radius ip> 0 testing123
 
-# Check Radius Log
-    $ docker exec -it radius tail -f /var/log/radius/radius.log
+## Check Radius Log
+    $ docker exec -it radius tail -f /tmp/radius.log

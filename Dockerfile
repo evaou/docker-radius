@@ -8,4 +8,4 @@ EXPOSE 1813/udp
 EXPOSE 1812/tcp
 EXPOSE 1813/tcp
 
-ENTRYPOINT /usr/sbin/radiusd -f -X -l /var/log/radius/radius.log
+ENTRYPOINT /usr/sbin/radiusd -f -X -l /tmp/radius.log
