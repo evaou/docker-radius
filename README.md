@@ -1,6 +1,6 @@
 # Docker Radius 
 
-# Build docker image
+1. Build docker image
 
     $ docker build -t radius .
 
