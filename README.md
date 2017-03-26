@@ -1,3 +1,12 @@
+# Docker Radius
+
+- [Build docker image](#Build docker image)
+- [Run docker container](#Run docker container)
+- [Configure radius](#Configure radius)
+- [Restart docker container](#Restart docker container)
+- [Test radius](#Test Radius)
+- [Check radius log](#Check radius log)
+
 ## Build docker image
     $ docker build -t radius .
 
@@ -15,7 +24,7 @@
 
 ## Test radius
     $ yum install -y freeradius-utils
-    $ radtest testUser testPassword <docker radius ip> 0 testing123
+    $ radtest testUser testPassword *<docker radius ip>* 0 testing123
 
 ## Check radius Log
     $ docker exec -it radius tail -f /tmp/radius.log
