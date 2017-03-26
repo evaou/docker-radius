@@ -1,7 +1,7 @@
 radius:
   container_name: radius
   restart: always
-  image: radius
+  image: evaou/docker-radius
   volumes:
     - /tmp:/tmp
   tty: true

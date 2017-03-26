@@ -1,13 +1,9 @@
 # Docker Radius
 
-- [Build radius docker image](#build-radius-docker-image)
 - [Run radius docker container](#run-radius-docker-container)
 - [Configure radius](#configure-radius)
 - [Test radius](#test-radius)
 - [Check radius log](#check-radius-log)
-
-### Build radius docker image
-    $ docker build -t radius .
 
 ### Run radius docker container
     $ docker-compose up -d
