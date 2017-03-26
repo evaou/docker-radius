@@ -13,7 +13,7 @@
 
     $ docker exec -it radius bash
     $ echo "testUser Cleartext-Password := \"testPassword\"" >> /etc/raddb/users 
-    $ echo -e "client any {\n        ipaddr     = 0.0.0.0/0\n        secret    = testing123\n}" >> /etc/raddb/clients.conf
+    $ echo -e "client any {\n\tipaddr\t= 0.0.0.0/0\n\tsecret\t= testing123\n}" >> /etc/raddb/clients.conf
     $ exit
     $ docker restart radius 
 
