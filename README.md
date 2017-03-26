@@ -1,4 +1,4 @@
-[Build docker image](#Build docker image)
+[Build docker image](#build-docker-image)
 [Run docker container](#Run docker container)
 [Configure radius](#Configure radius)
 [Restart docker container](#Restart docker container)
