@@ -1,16 +1,15 @@
 # Docker Radius
 
-- [Build docker image](#build-docker-image)
-- [Run docker container](#run-docker-container)
+- [Build docker image](#build-radius-docker-image)
+- [Run docker container](#run-radius-docker-container)
 - [Configure radius](#configure-radius)
-- [Restart docker container](#restart-docker-container)
 - [Test radius](#test-radius)
 - [Check radius log](#check-radius-log)
 
-### Build docker image
+### Build radius docker image
     $ docker build -t radius .
 
-### Run docker container
+### Run radius docker container
     $ docker-compose up -d
 
 ### Configure radius
@@ -18,8 +17,6 @@
     $ echo "testUser Cleartext-Password := \"testPassword\"" >> /etc/raddb/users 
     $ echo -e "client any {\n        ipaddr     = 0.0.0.0/0\n        secret    = testing123\n}" >> /etc/raddb/clients.conf
     $ exit
-
-###  Restart docker container
     $ docker restart radius 
 
 ### Test radius
