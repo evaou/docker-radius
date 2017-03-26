@@ -1,9 +1,11 @@
-[Build docker image](#build-docker-image)
-[Run docker container](#Run docker container)
-[Configure radius](#Configure radius)
-[Restart docker container](#Restart docker container)
-[Test radius](#Test Radius)
-[Check radius log](#Check radius log)
+# Docker Radius
+
+- [Build docker image](#build-docker-image)
+- [Run docker container](#run-docker-container)
+- [Configure radius](#configure-radius)
+- [Restart docker container](#restart-docker-container)
+- [Test radius](#test-radius)
+- [Check radius log](#check-radius-log)
 
 ## Build docker image
     $ docker build -t radius .
