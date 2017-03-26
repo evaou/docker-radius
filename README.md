@@ -1,7 +1,7 @@
 # Docker Radius
 
-- [Build docker image](#build-radius-docker-image)
-- [Run docker container](#run-radius-docker-container)
+- [Build radius docker image](#build-radius-docker-image)
+- [Run radius docker container](#run-radius-docker-container)
 - [Configure radius](#configure-radius)
 - [Test radius](#test-radius)
 - [Check radius log](#check-radius-log)
